@@ -1,7 +1,7 @@
 import React, {useState} from "react"
 import {useSelector, useDispatch} from "react-redux"
-import {addItem, deleteItem, editItem} from "../store/items"
-import {RootState} from "../store/rooteReducer"
+import {addItem, deleteItem, editItem} from "../../store/items"
+import {RootState} from "../../store/rooteReducer"
 
 const AddItem: React.FC = () => {
     const items = useSelector((state: RootState) => state.items.items)
